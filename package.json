@@ -1,0 +1,53 @@
+{
+  "name": "ethoFS",
+  "version": "1.0.0",
+  "description": "A ethoFS gateway, conviently hosted on your own machine",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-win": "build --windows --dir",
+    "dist-win": "build --platform=win --arch=x64",
+    "dist-linux": "build --platform=linux --arch=x64",
+    "dist-osx": "build --platform=mac --arch=x64"
+  },
+  "build": {
+    "appId": "ethoFS",
+    "files": [
+      "favicon.ico",
+      "package.json",
+      "main.js",
+      "preload.js",
+      "render.js",
+      "index.html",
+      "dashboard/*"
+    ],
+    "win": {
+      "target": "7z",
+      "icon": "build/icon.png",
+      "artifactName": "Windows-${productName}-${version}.${ext}"
+    },
+    "linux": {
+      "target": "tar.gz",
+      "icon": "build/icon.icns",
+      "artifactName": "Linux-${productName}-${version}.${ext}"
+    },
+    "mac": {
+      "target": "pkg",
+      "icon": "build/icon.icns",
+      "artifactName": "MacOS-${productName}-${version}.${ext}"
+    }
+  },
+  "repository": "https://github.com/taeguscromis/Ether1DesktopWallet",
+  "keywords": [
+    "ethoFS",
+    "Upload",
+    "Dashboard"
+  ],
+  "author": "FallenGravity",
+  "license": "CC0-1.0",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "6.0.12",
+    "electron-builder": "^20.38.3"
+  }
+}
