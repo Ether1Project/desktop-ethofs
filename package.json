@@ -19,21 +19,21 @@
       "preload.js",
       "render.js",
       "index.html",
-      "dashboard/*"
+      "dashboard/**/*"
     ],
     "win": {
       "target": "7z",
-      "icon": "build/icon.png",
+      "icon": "dashboard/images/Logo.png",
       "artifactName": "Windows-${productName}-${version}.${ext}"
     },
     "linux": {
       "target": "tar.gz",
-      "icon": "build/icon.icns",
+      "icon": "dashboard/images/Logo.png",
       "artifactName": "Linux-${productName}-${version}.${ext}"
     },
     "mac": {
       "target": "pkg",
-      "icon": "build/icon.icns",
+      "icon": "dashboard/images/Logo.png",
       "artifactName": "MacOS-${productName}-${version}.${ext}"
     }
   },
