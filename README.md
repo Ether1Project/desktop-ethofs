@@ -1,6 +1,10 @@
 # ethoFS - Electron
+## Desktop Upload System 
 
-## To Use
+## Download Pre-Built Packages in dist/
+
+
+## To Use/Build
 
 ```bash
 # Clone this repository
@@ -12,8 +16,6 @@ npm install
 # Run the app
 npm run start
 ```
-
-Note: Building does not work.
 
 ## License
 
